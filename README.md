@@ -1,10 +1,8 @@
-# Astro Starter Kit: Basics
+# Gallery_Projects
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este repositório contem um projeto simples desenvolvido em Astro, Tailwind CSS e daisyui, hospedado no Netlify.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Caso tenha interesse no novo projeto, fique à vontade para acessá-lo pelo link acima. Obrigado pelo seu apoio! 🚀
 
 ## 🚀 Project Structure
 
@@ -18,15 +16,13 @@ Inside of your Astro project, you'll see the following folders and files:
 │   ├── assets
 │   │   └── astro.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │   └── ProjectCard.astro
 │   ├── layouts
 │   │   └── Layout.astro
 │   └── pages
 │       └── index.astro
 └── package.json
 ```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
 ## 🧞 Commands
 
@@ -44,4 +40,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# Gallery_Projects

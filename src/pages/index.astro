@@ -38,6 +38,7 @@ const types = ['Todos', ...new Set(allProjects.map((p) => p.data.type))];
             image={project.data.image}
             objectives={project.data.objectives}
             link={project.data.link}
+            type ={project.data.type}
           />
         </div>
       ))}

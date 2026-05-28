@@ -5,45 +5,41 @@ import Layout from '../layouts/Layout.astro';
 import "../styles/global.css";
 
 const allProjects = await getCollection('projects');
-
-// Pega todos os tipos únicos para criar os botões
-const types = ['Todos', ...new Set(allProjects.map((p) => p.data.type))];
 ---
 
-<Layout title="Meu Portfólio de Dashboards">
+<Layout title="Dashboard - PROEX em Números">
   <main class="p-8 max-w-7xl mx-auto">
-    <header class="mb-4 flex flex-row items-start justify-between">
-      <h1 class="text-2xl font-bold border-l-4 border-success px-4 uppercase tracking-tighter mb-4">
-        Painéis de Power BI e Códigos
-        
+  <header class="bg-green-700 border-b-6 border-green-900 text-white p-4 md:p-6 mb-8 rounded-lg flex flex-col md:flex-row items-center md:items-start justify-between shadow-lg">
+    
+    <div class="flex flex-col text-center md:text-left mb-5 md:mb-0">
+      <h1 class="text-3xl md:text-4xl font-extrabold uppercase tracking-tighter mb-1">
+        PROEX - Em Números
       </h1>
-      
-      <div class="flex flex-wrap gap-2 mb-8">
-        {types.map((type) => (
-          <button 
-            class="btn btn-outline btn-success btn-sm filter-btn" 
-            data-filter={type}
-          >
-            {type}
-          </button>
-        ))}
-      </div>
-    </header>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" id="project-grid">
-      {allProjects.map((project) => (
-        <div class="project-item" data-type={project.data.type}>
-          <ProjectCard 
-            title={project.data.title}
-            image={project.data.image}
-            objectives={project.data.objectives}
-            link={project.data.link}
-            type ={project.data.type}
-          />
-        </div>
-      ))}
+      <h2 class="text-sm md:text-lg font-bold uppercase tracking-widest mb-2">
+        Pró-Reitoria de Extensão
+      </h2>
     </div>
-  </main>
+
+    <div class="bg-white p-2 rounded-xl shadow-md flex items-center justify-center shrink-0">
+      <img src="src/assets/IFBA.png" width="150" alt="IFBA" class="object-contain" />
+    </div>
+
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" id="project-grid">
+    {allProjects.map((project) => (
+      <div class="project-item" data-type={project.data.type}>
+        <ProjectCard 
+          title={project.data.title}
+          image={project.data.image}
+          objectives={project.data.objectives}
+          link={project.data.link}
+          type={project.data.type}
+        />
+      </div>
+    ))}
+  </div>
+</main>
 </Layout>
 
 <script>

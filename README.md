@@ -1,4 +1,4 @@
-# Gallery_Projects
+# PROEX Em Números
 
 Este repositório contem um projeto simples desenvolvido em Astro, Tailwind CSS e daisyui, hospedado no Netlify.
 

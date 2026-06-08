@@ -1,7 +1,7 @@
 ---
 title: "Sistema de Auditoria de APACs"
-image: "/Images/Apac.png"
+image: "/Images/Apps_Apac.png"
 objectives: "Este projeto agiliza a realização de cruzamentos de dados do relatório da COPRO."
-type: "Apps"
+type: "Aplicativo"
 link: "https://apaccopro.streamlit.app/"
 ---
